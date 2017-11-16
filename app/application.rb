@@ -5,7 +5,6 @@ class Application
 
     time= Time.new
     puts "#{time}"
-    binding.pry
 
     if  time.hour >= 0 && time.hour < 12
       resp.write "Good Morning!"
