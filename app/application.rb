@@ -3,7 +3,7 @@ class Application
     resp = Rack::Response.new
 
     time= Time.new
-puts "#{Time.now}"
+puts "#{Time.now.hour}"
     if  time.hour >= 0 && time.hour < 12
       resp.write "Good Morning!"
     elsif time.hour >= 12 && time.hour < 24
