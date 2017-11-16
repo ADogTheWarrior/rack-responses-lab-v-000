@@ -7,7 +7,6 @@ describe "App" do
       Time.new(2015,11,27,9,30)
     }
     get '/'
-    binding.pry
     expect(last_response.body).to include("Morning")
   end
 
