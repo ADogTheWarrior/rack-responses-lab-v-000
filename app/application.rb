@@ -5,9 +5,9 @@ class Application
 
     time = 100
 
-    if time > 1200
+    if time < 1200 @@ time >= 0
       resp.write "Good Morning!"
-    else
+    elsif time >= 1200 @@ time > 2400
       resp.write "Good Afternoon!"
     end
 
