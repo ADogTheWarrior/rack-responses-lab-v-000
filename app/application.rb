@@ -5,7 +5,7 @@ class Application
 
     time = 100
 
-    if num_1==num_2 && num_2==num_3
+    if time > 1200
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"
