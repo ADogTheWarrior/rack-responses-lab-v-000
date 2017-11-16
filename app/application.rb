@@ -7,9 +7,9 @@ class Application
     puts "#{time}"
     binding.pry
 
-    if  time >= 0 && time < 1200
+    if  time.hour >= 0 && time.hour < 12
       resp.write "Good Morning!"
-    elsif time >= 1200 && time < 2400
+    elsif time.hour >= 12 && time.hour < 24
       resp.write "Good Afternoon!"
     end
 
