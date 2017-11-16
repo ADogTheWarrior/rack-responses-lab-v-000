@@ -4,6 +4,7 @@ class Application
     resp = Rack::Response.new
 
     time= Time.new
+    puts "#{time}"
     binding.pry
 
     if  time >= 0 && time < 1200
