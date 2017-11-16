@@ -7,7 +7,7 @@ class Application
 
     if  time.hour >= 0 && time.hour < 12
       resp.write "Good Morning!"
-    else#if time.hour >= 12 && time.hour < 24
+    elsef time.hour >= 12 && time.hour < 24
       resp.write "Good Afternoon!"
     end
 
